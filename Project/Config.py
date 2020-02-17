@@ -1,6 +1,5 @@
-Channel_secret= 'e9471ddf5803bd36ea98304e74b190b4'
-Channel_access_token = 'iM0cqxFMtiLnAGpI4g9bZjtssFBl0bkL1qXeHAMkdiGOldPbVPDg6pE+rb4JSQI6SJbd8blc4PyB7zSNRB1YDUweSz00AACauvGc2S8h4KtktH7gyBTEhEKXeSXfcNP5mYqqEDl9A9hRHyl91+SGRQdB04t89/1O/w1cDnyilFU='
-
+Channel_secret= 'YOUR_CHANNEL_SECRET'
+Channel_access_token = 'YOUR_CHANNEL_ACCESS_TOKEN'
 def content(imgSrc,Link,KW):
     return {
     "type": "bubble",
