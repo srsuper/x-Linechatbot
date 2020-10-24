@@ -15,7 +15,7 @@ def pornhub():
         Reply_token = payload['events'][0]['replyToken']
         message = payload['events'][0]['message']['text']
         
-        url = "https://www.xnxx.com/search/" + message
+        url = "https://www.pornhub.com/search/" + message
         data = requests.get(url)
         imgSrc = []
         i = 1
@@ -43,7 +43,7 @@ def pornhub():
         i = 0
         fullLink = []
         for i in range(numberOfClips):
-            fullLink.append("https://xnxx.com" + linkTail[i])
+            fullLink.append("https://pornhub.com" + linkTail[i])
 
         ReplyMessage(Reply_token,fullLink,Channel_access_token,imgSrc,message,clipCounter)
         return request.json, 200
