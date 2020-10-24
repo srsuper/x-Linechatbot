@@ -41,7 +41,7 @@ def content(imgSrc,Link,KW):
             "label": "ดูคลิปนี้",
             "uri": Link
           },
-                    "color": "#951DFF",
+                    "color": "#ff1d1d",
           "height": "sm",
           "style": "primary"
         }
