@@ -15,7 +15,7 @@ def pornhub():
         Reply_token = payload['events'][0]['replyToken']
         message = payload['events'][0]['message']['text']
         
-        url = "https://www.pornhub.com/search/" + message
+        url = "https://www.pornhub.com/video/search?search=" + message
         data = requests.get(url)
         imgSrc = []
         i = 1
