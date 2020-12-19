@@ -43,7 +43,7 @@ def pornhub():
         i = 0
         fullLink = []
         for i in range(numberOfClips):
-            fullLink.append("https://pornhub.com" + linkTail[i])
+            fullLink.append("https://www.pornhub.com/view_video.php?viewkey=" + linkTail[i])
 
         ReplyMessage(Reply_token,fullLink,Channel_access_token,imgSrc,message,clipCounter)
         return request.json, 200
