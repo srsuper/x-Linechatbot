@@ -13,9 +13,11 @@ def pornhub():
 
 
         Reply_token = payload['events'][0]['replyToken']
-        message = payload['events'][0]['message']['text']
+        msg = payload['events'][0]['message']['text']
+        message = msg.split(" ")
         
-        url = "https://www.xnxx.com/search/" + message
+        
+        url = "https://www.xnxx.com/search/" + message[1]
         data = requests.get(url)
         imgSrc = []
         i = 1
