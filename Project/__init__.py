@@ -70,7 +70,7 @@ def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
         "replyToken":Reply_token,
         "messages":[{
   "type": "flex",
-  "altText": "NSFW",
+  "altText": "PNCK",
   "contents": {
     "type": "carousel",
     "contents": [
@@ -94,7 +94,7 @@ def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
         "replyToken":Reply_token,
         "messages":[{
   "type": "flex",
-  "altText": "NSFW",
+  "altText": "PNCK",
   "contents": {
     "type": "carousel",
     "contents": [
@@ -116,7 +116,7 @@ def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
         "replyToken":Reply_token,
         "messages":[{
   "type": "flex",
-  "altText": "NSFW",
+  "altText": "PNCK",
   "contents": {
     "type": "carousel",
     "contents": [
@@ -136,7 +136,7 @@ def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
         "replyToken":Reply_token,
         "messages":[{
   "type": "flex",
-  "altText": "NSFW",
+  "altText": "PNCK",
   "contents": {
     "type": "carousel",
     "contents": [
@@ -154,7 +154,7 @@ def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
         "replyToken":Reply_token,
         "messages":[{
   "type": "flex",
-  "altText": "NSFW",
+  "altText": "PNCK",
   "contents": {
     "type": "carousel",
     "contents": [
