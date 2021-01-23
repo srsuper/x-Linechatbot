@@ -26,7 +26,7 @@ def pornhub():
         numberOfClips = 10
         clipCounter = 0
         soup = BeautifulSoup(data.text,'html.parser')
-        for div in soup.find_all('div',{"class":"thumb"}):
+        for div in soup.find_all('div',{"class":"video-item "}):
             for getatag in div.find_all('a',href=True):
                 print(getatag['href'])
                 linkTail.append(getatag['href'])
