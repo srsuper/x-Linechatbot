@@ -17,7 +17,7 @@ def pornhub():
         
         
         
-        url = "https://spankbang.com/tv/?station=" + message
+        url = "https://spankbang.com/s/" + message
         data = requests.get(url)
         imgSrc = []
         i = 1
@@ -45,7 +45,7 @@ def pornhub():
         i = 0
         fullLink = []
         for i in range(numberOfClips):
-            fullLink.append("https://spankbang.com/" + linkTail[i])
+            fullLink.append("https://spankbang.com/" + linkTail[i] +"/embed")
 
         ReplyMessage(Reply_token,fullLink,Channel_access_token,imgSrc,message,clipCounter)
         return request.json, 200
