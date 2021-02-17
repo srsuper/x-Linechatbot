@@ -18,7 +18,7 @@ def pornhub():
 
         
 
-        url = "https://www.xnxx.com/search/" + message
+        url = "https://m.spankbang.com/s/" + message
 
         data = requests.get(url)
 
@@ -36,7 +36,7 @@ def pornhub():
 
         soup = BeautifulSoup(data.text,'html.parser')
 
-        for div in soup.find_all('div',{"class":"thumb"}):
+        for div in soup.find_all('div',{"class":"thumb "}):
 
             for getatag in div.find_all('a',href=True):
 
@@ -72,7 +72,7 @@ def pornhub():
 
         for i in range(numberOfClips):
 
-            fullLink.append("https://xnxx.com" + linkTail[i])
+            fullLink.append("https://m.spankbang.com/" + linkTail[i] + "/embed")
 
         ReplyMessage(Reply_token,fullLink,Channel_access_token,imgSrc,message,clipCounter)
 
@@ -89,7 +89,7 @@ def pornhub():
 
 def ReplyMessage(Reply_token, Link, Line_Acees_Token, imgSrc, keyWord, count):
     LINE_API = 'https://api.line.me/v2/bot/message/reply'
-    Authorization = 'Bearer {}'.format('RAPsViFQbMGv5FvBgzr7gG8CASW9fAoJyyRHaiWraUDUo9bVWbpZdN+u6hxf+Fccliw/b0ZByZ/38RhNAE+hBRQLjumrkavdNu9shdxqmT3wU/hyPiI1FgchgUoC0TKrzryKYuqJN+9fyTqBRJ5pCgdB04t89/1O/w1cDnyilFU=')
+    Authorization = 'Bearer {}'.format('9hNPs1IxuzZgqLJiIwAokUwN2Gqbo/GMYvrkdogt2y64sC1R2myGzTbV90IrMwf5cB1tOXTIpGX0PosZVeMxv9tRRL1Nn3aMgoi1RFI7DonLX3oEYcXYopFvGFhHXmzEmf+vehz/69rOcfeXSuSTSgdB04t89/1O/w1cDnyilFU=')
     print(Authorization)
     headers = {
         'Content-Type': 'application/json; charset=UTF-8',
